@@ -1,0 +1,69 @@
+{
+    "formulario": {
+      "secciones": [
+        {
+          "titulo": "Datos Personales",
+          "campos": [
+            { "nombre": "Nombre", "tipo": "text", "requerido": true },
+            { "nombre": "Apellido", "tipo": "text", "requerido": true },
+            { "nombre": "Fecha de Nacimiento", "tipo": "date", "requerido": true },
+            { "nombre": "Sexo", "tipo": "select", "opciones": ["Masculino", "Femenino"] },
+            { "nombre": "Dirección", "tipo": "text", "requerido": true },
+            { "nombre": "Teléfono", "tipo": "number", "requerido": true },
+            { "nombre": "Correo electrónico", "tipo": "email", "requerido": true }
+          ]
+        },
+        {
+          "titulo": "Familiares",
+          "campos": [
+            { "nombre": "Agregar Familiar", "tipo": "button", "accion": "agregarFamiliar" },
+            {
+              "nombre": "Familiares",
+              "tipo": "repeater",
+              "campos": [
+                { "nombre": "Nombre Familiar", "tipo": "text", "requerido": true },
+                { "nombre": "Parentesco", "tipo": "select", "opciones": ["Padre", "Madre", "Hijo", "Hija", "Esposo", "Esposa"] },
+                { "nombre": "Edad", "tipo": "number", "requerido": true }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "Condiciones Pre-Existentes de Salud",
+          "campos": [
+            { "nombre": "Agregar Condición", "tipo": "button", "accion": "agregarCondicion" },
+            {
+              "nombre": "Condiciones",
+              "tipo": "repeater",
+              "campos": [
+                { "nombre": "Enfermedad", "tipo": "text", "requerido": true },
+                { "nombre": "Tiempo con la Enfermedad", "tipo": "number", "requerido": true },
+                { "nombre": "Detalles", "tipo": "textarea" }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "Internamientos Realizados",
+          "campos": [
+            { "nombre": "Agregar Internamiento", "tipo": "button", "accion": "agregarInternamiento" },
+            {
+              "nombre": "Internamientos",
+              "tipo": "repeater",
+              "campos": [
+                { "nombre": "Fecha", "tipo": "date", "requerido": true },
+                { "nombre": "Centro Médico", "tipo": "text", "requerido": true },
+                { "nombre": "Diagnóstico", "tipo": "textarea", "requerido": true }
+              ]
+            }
+          ]
+        },
+        {
+          "titulo": "Presentación de Datos",
+          "tipo": "presentacion",
+          "datos": "{ ... }"  
+        }
+      ]
+    }
+  }
+  

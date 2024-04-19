@@ -1,0 +1,62 @@
+/*boby{
+    background-color: azure;
+}
+h1{
+    text-align: center;
+    font-family: Arial, sans-serif; 
+    color: rgb(110, 110, 126);  
+}
+.tabledata{
+    margin:  auto;
+    border: 2% solid black;
+    width: 75%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-button {
+    margin-top: 20px; /* Add some spacing above the button */
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-button {
+    margin-right: 10px;
+}
